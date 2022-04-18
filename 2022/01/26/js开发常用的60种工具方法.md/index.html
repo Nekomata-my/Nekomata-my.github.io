@@ -18,18 +18,18 @@
   
     <meta name="description" content="1.邮箱123export const isEmail &#x3D; (s) &#x3D;&gt; &amp;#123;    return &#x2F;^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]&amp;#123;2,3&amp;#125;)&amp;#123;1,2&amp;#125;)$&#x2F;.test(s)&amp;#125;  2.手机号码123export const isMobile &#x3D; (s) &#x3D;&gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js开发常用的60种工具方法.md">
+<meta property="og:title" content="js开发常用的60种工具方法">
 <meta property="og:url" content="http://example.com/2022/01/26/js%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%8460%E7%A7%8D%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95.md/index.html">
 <meta property="og:site_name" content="今天要按时睡觉">
 <meta property="og:description" content="1.邮箱123export const isEmail &#x3D; (s) &#x3D;&gt; &amp;#123;    return &#x2F;^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]&amp;#123;2,3&amp;#125;)&amp;#123;1,2&amp;#125;)$&#x2F;.test(s)&amp;#125;  2.手机号码123export const isMobile &#x3D; (s) &#x3D;&gt;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-01-26T07:18:03.869Z">
-<meta property="article:modified_time" content="2022-04-17T08:37:53.318Z">
+<meta property="article:modified_time" content="2022-04-18T02:18:25.282Z">
 <meta property="article:author" content="饿了">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>js开发常用的60种工具方法.md - 今天要按时睡觉</title>
+  <title>js开发常用的60种工具方法 - 今天要按时睡觉</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -186,7 +186,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="js开发常用的60种工具方法.md"></span>
+            <span id="subtitle" data-typed-text="js开发常用的60种工具方法"></span>
           
         </div>
 
@@ -258,7 +258,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">js开发常用的60种工具方法.md</h1>
+            <h1 style="display: none">js开发常用的60种工具方法</h1>
             
             <div class="markdown-body">
               
@@ -312,7 +312,7 @@
 
 <h2 id="25-去除html标签"><a href="#25-去除html标签" class="headerlink" title="25.去除html标签"></a>25.去除html标签</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">removeHtmltag</span> = (<span class="hljs-params">str</span>) =&gt; &#123;<br>    <span class="hljs-keyword">return</span> str.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/&lt;[^&gt;]+&gt;/g</span>, <span class="hljs-string">&#x27;&#x27;</span>)<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h2 id="26-获取url参数"><a href="#26-获取url参数" class="headerlink" title="26.获取url参数"></a>26.获取url参数</h2><h2 id="26-获取url参数-1"><a href="#26-获取url参数-1" class="headerlink" title="26.获取url参数"></a>26.获取url参数</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">getQueryString</span> = (<span class="hljs-params">name</span>) =&gt; &#123;<br>    <span class="hljs-keyword">const</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExp</span>(<span class="hljs-string">&#x27;(^|&amp;)&#x27;</span> + name + <span class="hljs-string">&#x27;=([^&amp;]*)(&amp;|$)&#x27;</span>, <span class="hljs-string">&#x27;i&#x27;</span>);<br>    <span class="hljs-keyword">const</span> search = <span class="hljs-variable language_">window</span>.<span class="hljs-property">location</span>.<span class="hljs-property">search</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;?&#x27;</span>)[<span class="hljs-number">1</span>] || <span class="hljs-string">&#x27;&#x27;</span>;<br>    <span class="hljs-keyword">const</span> r = search.<span class="hljs-title function_">match</span>(reg) || [];<br>    <span class="hljs-keyword">return</span> r[<span class="hljs-number">2</span>];<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="26-获取url参数"><a href="#26-获取url参数" class="headerlink" title="26.获取url参数"></a>26.获取url参数</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">getQueryString</span> = (<span class="hljs-params">name</span>) =&gt; &#123;<br>    <span class="hljs-keyword">const</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RegExp</span>(<span class="hljs-string">&#x27;(^|&amp;)&#x27;</span> + name + <span class="hljs-string">&#x27;=([^&amp;]*)(&amp;|$)&#x27;</span>, <span class="hljs-string">&#x27;i&#x27;</span>);<br>    <span class="hljs-keyword">const</span> search = <span class="hljs-variable language_">window</span>.<span class="hljs-property">location</span>.<span class="hljs-property">search</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;?&#x27;</span>)[<span class="hljs-number">1</span>] || <span class="hljs-string">&#x27;&#x27;</span>;<br>    <span class="hljs-keyword">const</span> r = search.<span class="hljs-title function_">match</span>(reg) || [];<br>    <span class="hljs-keyword">return</span> r[<span class="hljs-number">2</span>];<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h2 id="27-动态引入js"><a href="#27-动态引入js" class="headerlink" title="27.动态引入js"></a>27.动态引入js</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">injectScript</span> = (<span class="hljs-params">src</span>) =&gt; &#123;<br>    <span class="hljs-keyword">const</span> s = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;script&#x27;</span>);<br>    s.<span class="hljs-property">type</span> = <span class="hljs-string">&#x27;text/javascript&#x27;</span>;<br>    s.<span class="hljs-property">async</span> = <span class="hljs-literal">true</span>;<br>    s.<span class="hljs-property">src</span> = src;<br>    <span class="hljs-keyword">const</span> t = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementsByTagName</span>(<span class="hljs-string">&#x27;script&#x27;</span>)[<span class="hljs-number">0</span>];<br>    t.<span class="hljs-property">parentNode</span>.<span class="hljs-title function_">insertBefore</span>(s, t);<br>&#125;<br></code></pre></td></tr></table></figure>
 
@@ -396,7 +396,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>js开发常用的60种工具方法.md</div>
+      <div>js开发常用的60种工具方法</div>
       <div>http://example.com/2022/01/26/js开发常用的60种工具方法.md/</div>
     </div>
     <div class="license-meta">
